@@ -1,0 +1,147 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+/* Barra superior */
+.top-bar {
+    background-color: #ffffff;
+    padding: 10px 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+/* Contenedor de la barra superior */
+.top-bar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo en el centro de la barra superior */
+.logo-text {
+    font-family: 'Lobster', cursive;
+    font-size: 24px;
+    color: #343a40;
+    text-align: center;
+    flex: 1;
+}
+
+/* Contenedor de los íconos */
+.right-icons {
+    display: flex;
+    align-items: center;
+}
+
+/* Espaciado entre los íconos */
+.right-icons a {
+    margin-left: 15px;
+}
+
+/* Ajustes de los íconos */
+.right-icons img {
+    height: 30px;
+}
+
+/* Estilos para el menú de navegación */
+.navbar-nav {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Ajustes del botón de toggler */
+.navbar-toggler {
+    border: none;
+}
+
+/* Estilos específicos para dispositivos móviles */
+@media (max-width: 767px) {
+    .navbar-collapse {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.95);
+        z-index: 1050;
+        text-align: center;
+        overflow-y: auto;
+        padding: 1rem;
+    }
+
+    .navbar-nav {
+        width: 100%;
+    }
+
+    .nav-item {
+        margin: 0;
+        width: 100%;
+    }
+
+    .nav-link {
+        display: block;
+        padding: 10px;
+        width: 100%;
+    }
+
+    .dropdown-menu {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .navbar-toggler-icon {
+        display: none;
+    }
+}
+
+/* Estilos para el carrusel */
+.carousel-item img {
+    width: 100%;
+    height: 400px;
+    max-height: 400px;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Estilos para las tarjetas */
+.card {
+    margin-bottom: 30px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-img-top {
+    width: 100%;
+    height: 200px; /* Ajusta la altura de la imagen */
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 15px;
+    text-align: center;
+}
+
+.card-title {
+    font-size: 16px;
+    color: #343a40;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 14px;
+    color: #6c757d;
+    margin-bottom: 15px;
+}
+
+/* Estilos para el botón "Añadir al carrito" */
+.add-to-cart {
+    margin-top: 10px; /* Espacio arriba del botón */
+    display: block; /* Asegura que el botón ocupe toda la anchura disponible */
+    width: 100%; /* Hace que el botón ocupe el ancho completo del contenedor */
+    padding: 10px; /* Ajusta el espaciado interno del botón */
+    font-size: 14px; /* Tamaño de fuente del botón */
+    text-align: center; /* Centra el texto del botón */
+}
